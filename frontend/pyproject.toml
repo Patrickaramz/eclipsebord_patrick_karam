@@ -1,13 +1,17 @@
 [project]
 name = "frontend"
 version = "0.1.0"
-description = "Add your description here"
+description = "EclipseBord frontend"
 readme = "README.md"
 authors = [
     { name = "Patrick Karam", email = "patrick.karamz@hotmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "streamlit>=1.40.0",
+    "httpx>=0.27.0",
+    "pandas>=2.2.0",
+]
 
 [project.scripts]
 frontend = "frontend:main"
